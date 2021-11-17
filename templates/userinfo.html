@@ -1,0 +1,52 @@
+<html>
+<body>
+    <h1> {{userinfotitle}}</h1>
+    <table>
+        <tr>
+            <th>user id</th>
+            <th>age</th>
+            <th>weight</th>
+            <th>height</th>
+            <th>gender</th>
+        </tr>
+        {% for info in userinfo %}
+        <tr>
+            <th>{{ info[5] }}</th>
+            <th>{{ info[0] }}</th>
+            <th>{{ info[1] }}</th>
+            <th>{{ info[2] }}</th>
+            <th>{{ info[3] }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+    <h1> {{activitytitle}}</h1>
+    <table>
+        <tr>
+            <th>user id</th>
+            <th>summary_date</th>
+            <th>timezone</th>
+            <th>day_start</th>
+            <th>day_end</th>
+            <th>cal_active</th>
+            <th>cal_total</th>
+            <th>class_5min</th>
+            <th>steps</th>
+            <th>daily_movement</th>
+        </tr>
+        {% for activity in activities %}
+        <tr>
+            <th>{{ activity[36] }}</th>
+            <th>{{ activity[0] }}</th>
+            <th>{{ activity[1] }}</th>
+            <th>{{ activity[2] }}</th>
+            <th>{{ activity[3] }}</th>
+            <th>{{ activity[4] }}</th>
+            <th>{{ activity[5] }}</th>
+            <th>{{ activity[6] }}</th>
+            <th>{{ activity[7] }}</th>
+            <th>{{ activity[8] }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
